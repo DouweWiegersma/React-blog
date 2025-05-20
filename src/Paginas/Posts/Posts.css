@@ -1,0 +1,20 @@
+.blogpost{
+    margin: 40px;
+
+}
+
+.post{
+    font-family: cursive;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: lighter;
+}
+.post:hover{
+    border-bottom: 1px solid black;
+
+}
+.author{
+    font-size: 1.5em;
+    font-weight: bolder;
+}
