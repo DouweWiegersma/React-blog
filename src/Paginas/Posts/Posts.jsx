@@ -7,15 +7,18 @@ function Posts(){
 
     return(
         <>
-        {posts.map((post, id) => (
-            <div key={id} className='blogpost'>
-                <p className='author'> <Link to={`/DetailPost/${post.id}`} className='post'> {post.title}</Link> ({post.author})</p> <br/>
-                {post.comments} reacties - {post.shares} gedeeld
+            <h1 className='title'>Bekijk alle 17 posts op het platform</h1>
+            {posts.map((post, id) => (
+                <div key={id} className='blogpost'>
 
-            </div>
-        ))}
+                    <div className='author'><Link to={`/DetailPost/${post.id}`} className='post'> {post.title}</Link> ({post.author}) <br/>
+                        {post.comments} reacties - {post.shares} gedeeld
+                    </div>
+                </div>
+            ))}
 
         </>
     )
 }
+
 export default Posts;

@@ -9,7 +9,8 @@
     list-style: none;
     padding: 50px;
     color: #FFFFFF;
-    background-color: #38E991;
+    background-color: #2C2F39;
+
 
 
 }
@@ -17,16 +18,20 @@
 .nav-link{
     text-decoration: none;
     color: black;
+
 }
 
 .active-link{
     text-decoration: none;
-    color: black;
-    border-bottom: 1px solid black;
+    color: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
 }
 
 .default-link{
     text-decoration: none;
-    color: black;
+    color: #FFFFFF;
 
+}
+.main-logo{
+    text-align: center;
 }

@@ -1,0 +1,23 @@
+.titles{
+    padding-bottom: 50px;
+    background-color: #FFFFFF;
+    color: black;
+    font-family: cursive;
+}
+.subtitles{
+    color: black;
+}
+.background-details{
+    background-color: #FFFFFF;
+    padding: 110px;
+}
+.subtitles{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.written{
+    font-style: italic;
+}
+.space{
+    padding-top: 20px;
+}

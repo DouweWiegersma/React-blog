@@ -12,6 +12,7 @@ function App() {
 
     return (
         <>
+            <div className='background-colors'>
             <Navigation/>
     <Routes>
         <Route path='/' element={<Home/>} />
@@ -20,7 +21,7 @@ function App() {
         <Route path='/errors' element={<Errors/>}  />
         <Route path='/detailpost/:id' element={<DetailPost />} />
     </Routes>
-
+            </div>
             </>
     )
 }
