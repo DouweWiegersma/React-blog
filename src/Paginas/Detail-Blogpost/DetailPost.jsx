@@ -6,10 +6,12 @@ import "/src/Paginas/Detail-Blogpost/DetailPost.css";
 
 
 
+
 function DetailPost(){
 
          const {id} = useParams()
          const ids = parseInt(id)
+
 
     return(
         <>
@@ -18,7 +20,7 @@ function DetailPost(){
             <p className="subtitles"> {posts[ids - 1].subtitle}</p>
                 <cite className='written'>Geschreven door {posts[ids - 1].author}, {changeDate(posts[ids - 1 ].created)} </cite>
             <p className="space">{posts[ids - 1].content}</p>
-            <p className="space" c>{posts[ids - 1].comments} reacties - {posts[ids - 1].shares} gedeeld</p>
+            <p className="space">{posts[ids - 1].comments} reacties - {posts[ids - 1].shares} gedeeld</p>
             </div>
         </>
     )
