@@ -1,5 +1,5 @@
 import logo from "../../assets/logo-white.png";
-import React from "react";
+// import React from "react";
 
 function Home(){
     return (
