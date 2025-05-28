@@ -9,6 +9,7 @@ import Errors from "./Paginas/Errors/Errors.jsx";
 import Navigation from "./Paginas/Navigation/Navigation.jsx";
 import DetailPost from "./Paginas/Detail-Blogpost/DetailPost.jsx";
 import {Routes, Route } from "react-router-dom";
+import Footer from "./Components/Footer/Footer.jsx";
 
 function App() {
 
@@ -22,8 +23,9 @@ function App() {
         <Route path='/newposts' element={<NewPost/>} />
         <Route path='/errors' element={<Errors/>}  />
         <Route path='/posts/:id' element={<DetailPost />} />
-        <Route path='*' element={<p>pagina niet gevonden moet hier nog een 404 pagina van maken</p>}/>
+        <Route path='*' element={<Errors/>}/>
     </Routes>
+                <Footer/>
             </div>
             </>
     )

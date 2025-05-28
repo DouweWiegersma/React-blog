@@ -1,0 +1,19 @@
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-colors{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 600px;
+
+}
+.error-noti{
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+    font-size: 2em;
+}
