@@ -2,43 +2,41 @@ import '/src/Paginas/Posts/Posts.css'
 import {useEffect, useState} from "react";
 import axios from "axios";
 import {Link} from "react-router-dom";
-// import newPost from "../NewPost/NewPost.jsx";
+
 
 
 function Posts(){
     const [posts, setPosts] = useState([])
-    const [loading, setLoading] = useState(false)
+    const [error, setError] = useState("")
 
     useEffect( () => {
         async function fetchData() {
             try {
                 const response = await axios.get('http://localhost:3000/posts')
                 setPosts(response.data)
-                setLoading(false)
+                setError("")
             }
             catch(e){
                 console.error('data is niet opgehaald', e)
-                setLoading(true)
+                setError("Kan de data niet vinden. PROBEER HET OVERNIEUW!")
             }
 
         }
         fetchData();
     }, [])
-    if (loading) return <p> bezig met laden....</p>
+    if (error) return <p style={{color: 'red'}}> Kan de data niet vinden. Probeer het overnieuw!</p>
 
     return(
         <>
-
+            <h1 className='title'> Blogposts</h1>
             {posts.map((post) => (
                 <div key={post.id} className='blogpost'>
                     <div className='author'>
                         <Link to={`/posts/${post.id}`} className='post'> {post.title}</Link>
-                        ({post.author}) <br/> {post.comments} reacties - gedeeld
+                        {" "} ({post.author}) <br/> <p className='space-between'>{post.comments} reacties - {post.shares} gedeeld</p>
                     </div>
                 </div>))
-             }))
-
-
+             }
                     </>
     )
 }

@@ -18,13 +18,20 @@
 .send-button{
     margin: 50px 200px;
     padding: 20px;
-    color: black;
+    color: #FFFFFF;
     background-color: #38E991;
     border: none;
     border-radius: 15px;
     font-size: 1.5em;
     font-family: cursive;
 }
+.send-button:hover{
+    text-decoration: underline;
+    background-color: #2d9864;
+}
+
+
+
 .input-fields{
     display: flex;
     align-items: center;
@@ -52,4 +59,25 @@
     padding-top: 50px;
     padding-bottom: 50px;
     font-family: cursive;
+}
+
+.wrong{
+    margin-left: 700px;
+}
+.succesfull{
+    padding: 10px;
+    margin-left: 650px;
+    margin-right: 650px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid #38E991;
+    background-color: #38E991;
+    color: #FFFFFF;
+}
+
+.succesfull:hover{
+    text-decoration: underline;
+    background-color: #2d9864;
 }
