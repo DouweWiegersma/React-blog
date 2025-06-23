@@ -65,23 +65,23 @@ function NewPosts() {
 
                 <label className="labels">Titel:</label>
                 <input type="text" className="input-fields"
-                name="title" value={formData.title} required onChange={handleChange} />
+                name="title" value={formData?.title} required onChange={handleChange} />
 
 
                 <label className="labels"> SubTitel:</label>
                 <input type="text" className="input-fields"
-                name="subtitle" value={formData.subtitle} onChange={handleChange} required/>
+                name="subtitle" value={formData?.subtitle} onChange={handleChange} required/>
 
 
 
                 <label className="labels">Naam en achternaam:</label>
                 <input type="text" className="input-fields"
-                name="author" value={formData.author} onChange={handleChange} required/>
+                name="author" value={formData?.author} onChange={handleChange} required/>
 
 
                 <label className="label-textfield">Blogpost:</label>
                 <textarea className="text-fields" rows={20} maxLength={1000} minLength={300} required
-                name="content" value={formData.content} onChange={handleChange}/>
+                name="content" value={formData?.content} onChange={handleChange}/>
 
 
                 <button type="submit" className="send-button" disabled={loading}>

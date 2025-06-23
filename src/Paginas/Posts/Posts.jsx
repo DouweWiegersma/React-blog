@@ -30,10 +30,10 @@ function Posts(){
         <>
             <h1 className='title'> Blogposts</h1>
             {posts.map((post) => (
-                <div key={post.id} className='blogpost'>
+                <div key={post?.id} className='blogpost'>
                     <div className='author'>
-                        <Link to={`/posts/${post.id}`} className='post'> {post.title}</Link>
-                        {" "} ({post.author}) <br/> <p className='space-between'>{post.comments} reacties - {post.shares} gedeeld</p>
+                        <Link to={`/posts/${post?.id}`} className='post'> {post?.title}</Link>
+                        {" "} ({post?.author}) <br/> <p className='space-between'>{post?.comments} reacties - {post?.shares} gedeeld</p>
                     </div>
                 </div>))
              }

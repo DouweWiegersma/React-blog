@@ -15,9 +15,11 @@ function DetailPost(){
     useEffect( () => {
         async function fetchData() {
             try {
+
                 const response = await axios.get(`http://localhost:3000/posts/${id}`)
                 setPosts(response.data)
                 setError("")
+
 
 
             }
@@ -27,8 +29,8 @@ function DetailPost(){
             }
 
         }
-
         fetchData()
+
     }, [id])
 
     if (error) return <p> Er is iets mis gegaan, Probeer het overnieuw!</p>
@@ -37,13 +39,13 @@ function DetailPost(){
 
 
 
-            <div key={posts.id} className='background-details'>
-            <h1 className='titles'>{posts.title} </h1>
-            <h2 className='subtitles'>{posts.subtitle}  </h2>
-            <p className='written'> Geschreven door {posts.author} op <cite>{changeDate(posts.created)}</cite></p>
-            <p> {posts.readTime} minuten lezen</p>
-            <p>{posts.content} </p>
-            <p>{posts.comments} reacties - {posts.shares} gedeeld</p>
+            <div key={posts?.id} className='background-details'>
+            <h1 className='titles'>{posts?.title} </h1>
+            <h2 className='subtitles'>{posts?.subtitle}  </h2>
+            <p className='written'> Geschreven door {posts?.author} op <cite>{changeDate(posts.created)}</cite></p>
+            <p> {posts?.readTime} minuten lezen</p>
+            <p>{posts?.content} </p>
+            <p>{posts?.comments} reacties - {posts?.shares} gedeeld</p>
                 <p className='space'>
                 <Link to='/posts' className='goBack'> Ga terug naar posts</Link>
                 </p>
