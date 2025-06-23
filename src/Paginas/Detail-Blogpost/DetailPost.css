@@ -1,0 +1,36 @@
+.titles{
+    padding-bottom: 50px;
+    background-color: #FFFFFF;
+    color: black;
+    font-family: cursive;
+}
+.subtitles{
+    color: black;
+}
+.background-details{
+    background-color: #FFFFFF;
+    padding: 110px;
+    flex-basis: 1000px;
+}
+.subtitles{
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: cursive;
+}
+.written{
+    font-style: italic;
+}
+.space{
+    padding-top: 40px;
+}
+.goBack{
+    text-decoration: none;
+    border: 2px solid #8ebd8e;
+    padding: 20px;
+    background-color: #38E991;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+.goBack:hover{
+    text-decoration: underline;
+}
